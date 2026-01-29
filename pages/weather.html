@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div id="logo"><a href="#"><img src="../imgs/Selection.png" alt=""></a></div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="stats.html">Standings</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="matches.html">Matches</a></li>
+        </ul>
+        <ul class="right-links">
+            <li><a href="weather.html" class="active"><i class="fa-solid fa-cloud"></i> Weather</a></li>
+            <li><a href="exchange.html"><i class="fa-solid fa-dollar-sign"></i> Exchange Rates</a></li>
+        </ul>
+    </nav>
+
+    <div class="weather-container">
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" id="citySearch" placeholder="Search for a city...">
+                <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <button id="currentLocationBtn" class="location-btn">
+                <i class="fa-solid fa-location-crosshairs"></i> Use Current Location
+            </button>
+        </div>
+
+        <!-- Current Weather Section -->
+        <div class="current-weather" id="currentWeather">
+            <div class="loading-state">
+                <i class="fa-solid fa-spinner fa-spin"></i>
+                <p>Loading weather data...</p>
+            </div>
+        </div>
+
+        <!-- Weather Details Grid -->
+        <div class="weather-details-grid" id="weatherDetails">
+            <!-- Will be populated by JavaScript -->
+        </div>
+
+        <!-- 5-Day Forecast -->
+        <div class="forecast-section">
+            <h2><i class="fa-solid fa-calendar-days"></i> 5-Day Forecast</h2>
+            <div class="forecast-grid" id="forecastGrid">
+                <div class="loading-state">
+                    <i class="fa-solid fa-spinner fa-spin"></i>
+                    <p>Loading forecast...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <ul class="left-footer">
+            <li><a href="#">News Sections</a></li>
+            <li><a href="#">Soccer Info</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+        <ul class="right-footer">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="../scripts/weather.js"></script>
+</body>
+
+</html>

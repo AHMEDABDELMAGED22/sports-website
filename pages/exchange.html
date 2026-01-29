@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/exchange.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div id="logo"><a href="#"><img src="../imgs/Selection.png" alt=""></a></div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="stats.html">Standings</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="matches.html">Matches</a></li>
+        </ul>
+        <ul class="right-links">
+            <li><a href="weather.html"><i class="fa-solid fa-cloud"></i> Weather</a></li>
+            <li><a href="exchange.html" class="active"><i class="fa-solid fa-dollar-sign"></i> Exchange Rates</a></li>
+        </ul>
+    </nav>
+
+    <div class="exchange-container">
+
+
+        <!-- Converter Section -->
+        <div class="glass-panel converter-display">
+            <div class="converter-box">
+                <div class="input-group">
+                    <label>Amount</label>
+                    <input type="number" id="amount" value="1" min="0">
+                </div>
+
+                <div class="select-group">
+                    <label>From</label>
+                    <div class="custom-select">
+                        <img id="fromFlag" src="https://flagcdn.com/w40/us.png" alt="flag">
+                        <select id="fromCurrency">
+                            <option value="USD" selected>USD - US Dollar</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="GBP">GBP - British Pound</option>
+                            <option value="SAR">SAR - Saudi Riyal</option>
+                            <option value="EGP">EGP - Egyptian Pound</option>
+                            <option value="AED">AED - UAE Dirham</option>
+                            <option value="KWD">KWD - Kuwaiti Dinar</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="swap-icon">
+                    <button id="swapBtn"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+                </div>
+
+                <div class="select-group">
+                    <label>To</label>
+                    <div class="custom-select">
+                        <img id="toFlag" src="https://flagcdn.com/w40/eg.png" alt="flag">
+                        <select id="toCurrency">
+                            <option value="EGP" selected>EGP - Egyptian Pound</option>
+                            <option value="USD">USD - US Dollar</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="GBP">GBP - British Pound</option>
+                            <option value="SAR">SAR - Saudi Riyal</option>
+                            <option value="AED">AED - UAE Dirham</option>
+                            <option value="KWD">KWD - Kuwaiti Dinar</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-display">
+                <p id="conversionResult">1 USD = -- EGP</p>
+                <div id="resultValue" class="glowing-text">--</div>
+            </div>
+
+            <button id="convertBtn" class="action-btn">Convert Now</button>
+        </div>
+
+        <!-- Popular Rates Grid -->
+        <div class="rates-section">
+            <h2><i class="fa-solid fa-globe"></i> Popular Exchange Rates</h2>
+            <div class="rates-grid" id="popularRates">
+                <!-- Populated by JS -->
+                <div class="loading-state">
+                    <i class="fa-solid fa-spinner fa-spin"></i> Loading rates...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <ul class="left-footer">
+            <li><a href="#">News Sections</a></li>
+            <li><a href="#">Soccer Info</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+        <ul class="right-footer">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="../scripts/exchange.js"></script>
+</body>
+
+</html>

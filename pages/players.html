@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Players</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/players.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div id="logo"><a href="#"><img src="../imgs/Selection.png" alt=""></a></div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="stats.html">Standings</a></li>
+            <li><a href="players.html" class="active">Players</a></li>
+            <li><a href="matches.html">Matches</a></li>
+        </ul>
+        <ul class="right-links">
+            <li><a href="weather.html"><i class="fa-solid fa-cloud"></i> Weather</a></li>
+            <li><a href="exchange.html"><i class="fa-solid fa-dollar-sign"></i> Exchange Rates</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <h3>LIVE MATCHES</h3>
+            <div class="match-list">
+                <div class="match-item">
+                    <i class="fa-solid fa-futbol"></i>
+                    <span>Man Utd vs Liverpool - LIVE</span>
+                </div>
+                <div class="match-item">
+                    <i class="fa-solid fa-futbol"></i>
+                    <span>Chelsea vs Arsenal - FT (2-4)</span>
+                </div>
+                <div class="match-item">
+                    <i class="fa-solid fa-futbol"></i>
+                    <span>Spurs vs Man City - 20'</span>
+                </div>
+                <div class="match-item">
+                    <i class="fa-solid fa-futbol"></i>
+                    <span>Real Madrid vs Barca - LIVE</span>
+                </div>
+                <div class="match-item">
+                    <i class="fa-solid fa-futbol"></i>
+                    <span>Bayern vs Dortmund - HT (1-1)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="header">
+                <h1>Featured Players</h1>
+                <button class="manage-btn">
+                    <i class="fa-solid fa-user-gear"></i>
+                    Manage Players
+                </button>
+            </div>
+
+            <div class="filters">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="searchInput" type="text" placeholder="Search players...">
+                </div>
+                <select id="positionFilter">
+                    <option value="">All Positions</option>
+                    <!-- Positions will be populated dynamically from API -->
+                </select>
+                <select id="teamFilter">
+                    <option value="">Filter by Team</option>
+                </select>
+                <select id="sortSelect">
+                    <option value="">Sort by</option>
+                    <option value="goals">Goals</option>
+                    <option value="assists">Assists</option>
+                    <option value="apps">Apps</option>
+                </select>
+            </div>
+
+            <div class="players-grid" id="playersGrid">
+                <p>Loading players...</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <ul class="left-footer">
+            <li><a href="#">News Sections</a></li>
+            <li><a href="#">Soccer Info</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+        <ul class="right-footer">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="../scripts/players.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>متجر التيشيرتات</title>
+    <style>
+      body {
+        font-family: "Cairo", sans-serif;
+        margin: 0;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      header {
+        background-color: #111;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 24px;
+        letter-spacing: 1px;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 40px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .product {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.2s;
+      }
+
+      .product:hover {
+        transform: scale(1.03);
+      }
+
+      .product img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+
+      .info {
+        padding: 15px;
+        text-align: center;
+      }
+
+      .info h3 {
+        margin: 10px 0;
+        font-size: 20px;
+      }
+
+      .info p {
+        color: #777;
+        font-size: 16px;
+      }
+
+      .info button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        border: none;
+        background-color: #111;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .info button:hover {
+        background-color: #333;
+      }
+
+      footer {
+        text-align: center;
+        background: #111;
+        color: #fff;
+        padding: 15px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>👕 متجر التيشيرتات</header>
+
+    <div class="container">
+      <div class="product">
+        <img
+          src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600"
+          alt="تيشيرت أسود"
+        />
+        <div class="info">
+          <h3>تيشيرت أبيض </h3>
+          <p>السعر: 250 جنيه</p>
+          <button>اشترِ الآن</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img
+          src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=601"
+          alt="تيشيرت أبيض"
+        />
+        <div class="info">
+          <h3>تيشيرت أبيض بسيط</h3>
+          <p>السعر: 230 جنيه</p>
+          <button>اشترِ الآن</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="-2-300x450.jpg" alt="تيشيرت رمادي" />
+        <div class="info">
+          <h3>تيشيرت رمادي رياضي</h3>
+          <p>السعر: 270 جنيه</p>
+          <button>اشترِ الآن</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="-4-500x750.webp" alt="تيشيرت أزرق" />
+        <div class="info">
+          <h3>تيشيرت أزرق شبابي</h3>
+          <p>السعر: 260 جنيه</p>
+          <button>اشترِ الآن</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>© 2025 متجر التيشيرتات - كل الحقوق محفوظة</footer>
+  </body>
+</html>

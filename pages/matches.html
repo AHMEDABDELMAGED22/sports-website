@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League Matches</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/matches.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div id="logo"><a href="#"><img src="../imgs/Selection.png" alt=""></a></div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="stats.html">Standings</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="matches.html" class="active">Matches</a></li>
+        </ul>
+        <ul class="right-links">
+            <li><a href="weather.html"><i class="fa-solid fa-cloud"></i> Weather</a></li>
+            <li><a href="exchange.html"><i class="fa-solid fa-dollar-sign"></i> Exchange Rates</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <div class="content">
+            <div class="header">
+                <div class="league-info">
+                    <img src="https://apiv2.allsportsapi.com/logo/logo_leagues/152_premier-league.png"
+                        alt="Premier League" class="league-logo">
+                    <h1>Premier League Matches</h1>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="past">
+                    <i class="fa-solid fa-clock-rotate-left"></i> Past Matches
+                </button>
+                <button class="tab-btn" data-tab="live">
+                    <i class="fa-solid fa-circle-dot"></i> Live Matches
+                </button>
+                <button class="tab-btn" data-tab="upcoming">
+                    <i class="fa-solid fa-calendar-days"></i> Upcoming Matches
+                </button>
+            </div>
+
+            <!-- Tab Contents -->
+            <div class="tab-content active" id="past">
+                <div class="matches-grid" id="pastMatches">
+                    <div class="loading-skeleton">
+                        <p><i class="fa-solid fa-spinner fa-spin"></i> Loading past matches...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="live">
+                <div class="matches-grid" id="liveMatches">
+                    <div class="loading-skeleton">
+                        <p><i class="fa-solid fa-spinner fa-spin"></i> Loading live matches...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="upcoming">
+                <div class="matches-grid" id="upcomingMatches">
+                    <div class="loading-skeleton">
+                        <p><i class="fa-solid fa-spinner fa-spin"></i> Loading upcoming matches...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <ul class="left-footer">
+            <li><a href="#">News Sections</a></li>
+            <li><a href="#">Soccer Info</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+        <ul class="right-footer">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="../scripts/matches.js"></script>
+</body>
+
+</html>

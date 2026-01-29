@@ -1,0 +1,157 @@
+/* Stats Page Specific Styles */
+
+/* Remove global styles as they are provided by style.css */
+
+/* Sidebar Components Override / specific to Stats page if needed */
+.live-matches,
+.top-players {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.live-matches:hover,
+.top-players:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.matches-row,
+.top-players-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.matches-row:last-child,
+.top-players-row:last-child {
+  border-bottom: none;
+}
+
+.live-match,
+.top-player {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.match,
+.player {
+  color: var(--text-secondary);
+}
+
+.rate,
+.goal {
+  color: var(--accent-secondary);
+  font-weight: bold;
+}
+
+/* Standings Table */
+.standing-container {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  overflow-x: auto;
+}
+
+.standing-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.standing-table thead {
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 2px solid var(--accent-primary);
+}
+
+.standing-table th {
+  padding: 15px;
+  color: var(--accent-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.standing-table td {
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  vertical-align: middle;
+}
+
+.standing-table tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.standing-team {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.standing-team img {
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3));
+}
+
+/* League Selector */
+.League-Selector {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 25px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 30px;
+}
+
+.League-Selector h3 {
+  margin-bottom: 10px;
+  border-left: 4px solid var(--accent-secondary);
+}
+
+.League-Selector p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.league-select-input {
+  width: 100%;
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-family: var(--font-main);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.league-select-input:focus {
+  border-color: var(--accent-secondary);
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.1);
+}
+
+.league-select-input option {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 10px;
+}
+
+/* Live Badge */
+.LIVE {
+  background: #ff4444;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(255, 68, 68, 0.4);
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Football and News Website</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/stats.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div id="logo">
+      <a href="#"><img src="../imgs/Selection.png" alt="" /></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="stats.html" class="active">Standings</a></li>
+      <li><a href="players.html">Players</a></li>
+      <li><a href="matches.html">Matches</a></li>
+    </ul>
+    <ul class="right-links">
+      <li>
+        <a href="weather.html"><i class="fa-solid fa-cloud"></i> Weather</a>
+      </li>
+      <li>
+        <a href="exchange.html"><i class="fa-solid fa-dollar-sign"></i> Exchange Rates</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="layout">
+    <aside class="side-bar">
+      <div class="live-matches">
+        <h3>LIVE MATCHES</h3>
+        <!-- Content populated / styled by JS/CSS -->
+        <div class="matches-row">
+          <span class="live-match">Man City vs Arsenal</span>
+          <span class="LIVE">LIVE</span>
+        </div>
+        <!-- ... kept hardcoded or dynamic ... -->
+      </div>
+      <div class="top-players">
+        <h3>TOP PLAYERS</h3>
+        <!-- ... -->
+      </div>
+    </aside>
+
+    <div class="main">
+      <header>
+        <div class="left-content">
+          <h1>Soccer League Standings</h1>
+          <p>
+            Track your favorite teams' performance throughout the season with
+            detailed rankings and statistics.
+          </p>
+          <br><br>
+          <div class="League-Selector">
+            <h3>Select League / Season</h3>
+            <p>View standings for different competitions.</p>
+            <select class="league-select-input" id="leagueSelect">
+              <option value="152">Premier League 2025/2026</option>
+              <option value="302">La Liga 2025/2026</option>
+              <option value="207">Serie A 2025/2026</option>
+              <option value="152">Bundesliga 2025/2026</option>
+              <option value="168">Ligue 1 2025/2026</option>
+            </select>
+          </div>
+          <br><br>
+          <div class="standing-container">
+            <table class="standing-table" id="standingsTable">
+              <thead>
+                <tr class="standing-main-row">
+                  <th class="standing-elements">Rank</th>
+                  <th class="standing-team">Team</th>
+                  <th class="standing-elements">Played</th>
+                  <th class="standing-elements">Wins</th>
+                  <th class="standing-elements">Draws</th>
+                  <th class="standing-elements">Losses</th>
+                  <th class="standing-elements">GF</th>
+                  <th class="standing-elements">GA</th>
+                  <th class="standing-elements">GD</th>
+                  <th class="standing-elements">PTS</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+
+        </div>
+    </div>
+    </header>
+  </div>
+  </div>
+
+  <footer class="footer">
+    <ul class="left-footer">
+      <li><a href="#">News Sections</a></li>
+      <li><a href="#">Soccer Info</a></li>
+      <li><a href="#">More</a></li>
+    </ul>
+    <ul class="right-footer">
+      <li>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </li>
+    </ul>
+  </footer>
+  <script src="../scripts/stats.js"></script>
+
+</body>
+
+</html>

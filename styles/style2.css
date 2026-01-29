@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 70px;
+    background-color: black;
+    color: white;
+}
+
+/* -------------------- Nav -------------------- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 40px;
+}
+
+#logo img {
+    height: 40px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+.right-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+a:hover,
+.nav-links a.active {
+    color: #6583fb;
+}
+
+.right-links i {
+    color: white;
+    margin-right: 5px;
+}
+
+body::before {
+    content: "";
+    display: block;
+    height: 70px;
+}
+
+/* -------------------- Footer -------------------- */
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    color: #6583fb;
+}
+
+.right-footer i {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.right-footer i:hover { 
+    color: #6583fb; 
+}
+
+/* -------------------- Layout -------------------- */
+.layout {
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    padding: 20px;
+    margin: 2px 0;
+}
+
+.main {
+    background-color: black;
+    color: white;
+    width: 80%;
+    padding: 20px;
+    margin: 2px 0;
+}
+
+.weather-update ,
+.exchange-rates {
+    background-color: #1e2128;
+    padding: 30px 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.weather-update p {
+    color: #bdc1ca;
+    padding-top: 20px;
+}
+
+.weather-update p i {
+    color: #6583fb;
+}
+
+#degree {
+    font-weight: bolder;
+    color: #f3f4f6;
+    font-size: 20px;
+}
+
+.temp-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.weather-info {
+    font-size: 14px;
+}
+
+#icon {
+    width: 50px;
+    height: 50px;
+}
+
+.exchange-rates h3 {
+    margin-bottom: 20px;
+}
+
+.exchange-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+}
+
+.exchange-row:last-child {
+    border-bottom: none;
+}
+
+.currency {
+    font-weight: 500;
+}
+
+.rate {
+    color: #bdc1ca;
+    font-weight: bold;
+}
+
+header {
+    background-color: #02104b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.left-content,
+.right-content {
+    padding: 60px 30px;
+}
+
+.left-content h1 {
+    font-size: 40px;
+}
+
+.left-content p {
+    margin: 15px 0;
+    color: #bdc1ca;
+}
+
+.left-content button {
+    padding: 12px 25px;
+    background-color: #6583fb;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.left-content button:hover {
+    background-color: #3a55c0;
+}
+
+.right-content img {
+    border-radius: 10px;
+}
+
+/***********************************main*****************/
+.head {
+text-align: center;
+padding: 2rem;
+}
+
+.img-card {
+  height: 40%;   
+  width: 100%; 
+  border-radius: 10px;   
+}
+ 
+.card{
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  max-width: 300px;
+  /* margin: auto; */
+  height: 340px;
+  /* text-align: center; */
+  background-color: rgb(30, 33, 40);
+  border-radius: 10px; 
+overflow-y: hidden;
+} 
+
+.details {
+    height: 60%;
+    color: white;
+    margin: auto;
+    padding:0.7rem;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position:relative;
+}
+.details h4 {
+    padding: 0.6rem;
+}
+
+.details p {
+    color:hsl(222, 11%, 76%) ;
+}
+
+.details p {
+    padding: 0.4rem;
+}
+
+ .cards {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 1rem 2rem; 
+  justify-content:space-evenly;
+  /* width: 100%;
+  margin: auto; */
+}
+
+
+ .headOfSection {
+ font-size:1rem;
+ font-weight: bold;
+ padding: 0.5rem;
+}
+
+.details button {
+   color: #6583FB;
+   background: transparent;
+   border: none;
+   padding: 0.4rem;
+}
+ .Entertainment {
+background-color: #262A33 ;
+border-radius: 15px;
+
+ }
+.Entertainment p {
+    color: white;
+}
+.politics {
+ 
+border-radius: 15px;
+}
+
+.politics p {
+    color: white;
+}
+
+.sports {
+    background-color: #262A33 ;
+border-radius: 15px;
+}
+.sports p {
+   color: white;
+}
+
+.full-two {
+    background-color: #171A1F;
+    margin: 2rem;
+    padding: 2rem;
+}
+.sports{
+        background-color: #262A33
+}
+
+/******************* side bar live matches *********/
+
+.match img {
+height: 20px;
+
+}
+.matches {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+}
+
+.headOfMatch{
+    margin: 0.8rem;
+    font-weight: 700;
+}
+
+.color-faded {
+    color: #BDC1CA;
+}
+.backfaded {
+    background-color: #262A33;
+}
+.match {
+    border-radius: 12px;
+    padding: 0.5rem;
+margin: 0.1rem;
+}
+.LIVE {
+  display: inline-block;
+  background-color: red;       
+  color: white;                
+  font-weight: bold;           
+  padding: 1px 7px;           
+  border-radius: 5px;         
+  font-family: Arial, sans-serif;
+}
