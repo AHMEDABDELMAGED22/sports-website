@@ -105,7 +105,7 @@ if (usd && sar && eur && gbp) {
 
 // News API
 // GNews API - https://gnews.io/
-const apiKey = '9f431a1597fd1f6320630087a1884512';
+const apiKey = 'f65c3d62dae2ebc64125b3000e793b1d';
 const categories = ["politics", "sports", "entertainment"];
 
 
