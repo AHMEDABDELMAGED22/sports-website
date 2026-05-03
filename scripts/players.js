@@ -1,6 +1,6 @@
 const leagueId = '152';
 const countryId = '44'; // England
-const apiKey = '854227dfc2e2c8b4ecfe62d71445ec1fcc8d32bef9fd2a107b11e914630c04d3';
+const apiKey = '2061f6328304da0ceaeabe8687e103ce5e61ae0beffa2c6754104749c8ff38b2';
 const apiUrl = `https://apiv2.allsportsapi.com/football/?met=Teams&leagueId=${leagueId}&APIkey=${apiKey}`;
 const liveurl = `https://apiv2.allsportsapi.com/football/?met=Livescore&countryId=${countryId}&APIkey=${apiKey}`;
 

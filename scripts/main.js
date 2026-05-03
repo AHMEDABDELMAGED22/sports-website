@@ -146,12 +146,12 @@ async function fetchNews(category) {
 }
 
 // Fetch and display live matches
-const liveMatchesApiKey = '854227dfc2e2c8b4ecfe62d71445ec1fcc8d32bef9fd2a107b11e914630c04d3';
+const liveMatchesApiKey = '2061f6328304da0ceaeabe8687e103ce5e61ae0beffa2c6754104749c8ff38b2';
 const countryId = '44'; // England
 const liveMatchesUrl = `https://apiv2.allsportsapi.com/football/?met=Livescore&countryId=${countryId}&APIkey=${liveMatchesApiKey}`;
 
 function getLiveMatches() {
-  const matchesContainer = document.querySelector('.liveMatches .matches');
+  const matchesContainer = document.querySelector('.liveMatches .matches-grid');
   if (!matchesContainer) return;
 
   fetch(liveMatchesUrl)
